@@ -3,6 +3,7 @@ import Layout from "@/components/layout/Layout";
 import Home from "@/pages/Home";
 import Studio from "@/pages/Studio";
 import Projects from "@/pages/Projects";
+import ProjectDetail from "@/pages/ProjectDetail";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
@@ -14,6 +15,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="studio" element={<Studio />} />
         <Route path="realizace" element={<Projects />} />
+        <Route path="realizace/:slug" element={<ProjectDetail />} />
         <Route path="sluzby" element={<Services />} />
         <Route path="kontakt" element={<Contact />} />
         <Route path="*" element={<NotFound />} />

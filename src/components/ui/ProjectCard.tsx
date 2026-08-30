@@ -4,7 +4,7 @@ import type { Project } from "@/data/projects";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <Link to="/realizace" className="group block">
+    <Link to={`/realizace/${project.slug}`} className="group block">
       <div className="aspect-[4/3] overflow-hidden">
         <PlaceholderArt
           variant={project.variant}
