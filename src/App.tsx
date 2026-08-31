@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import Home from "@/pages/Home";
 import Studio from "@/pages/Studio";
+import Timeline from "@/pages/Timeline";
 import Projects from "@/pages/Projects";
 import ProjectDetail from "@/pages/ProjectDetail";
 import Services from "@/pages/Services";
@@ -14,6 +15,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="studio" element={<Studio />} />
+        <Route path="kariera" element={<Timeline />} />
         <Route path="realizace" element={<Projects />} />
         <Route path="realizace/:slug" element={<ProjectDetail />} />
         <Route path="sluzby" element={<Services />} />

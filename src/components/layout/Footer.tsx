@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const NAV_ITEMS = [
   { to: "/studio", label: "Studio" },
+  { to: "/kariera", label: "Kariéra" },
   { to: "/realizace", label: "Realizace" },
   { to: "/sluzby", label: "Služby" },
   { to: "/kontakt", label: "Kontakt" },

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Container from "@/components/ui/Container";
 import PlaceholderArt from "@/components/ui/PlaceholderArt";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
@@ -7,15 +8,15 @@ import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 const STEPS = [
   {
     title: "Konzultace a studie",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    text: "Nezávazná konzultace nad pozemkem a představami klienta, po ní objemová studie a návrh dispozičního řešení.",
   },
   {
     title: "Projekt a povolení",
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+    text: "Projektová dokumentace pro územní řízení a stavební povolení, výběr dodavatelů a inženýring na úřadech.",
   },
   {
     title: "Realizace stavby",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+    text: "Stavební dozor a koordinace prací až po předání hotové stavby, případně vlastní realizace firmou Afutura.",
   },
 ];
 
@@ -43,21 +44,53 @@ export default function Studio() {
           </RevealOnScroll>
           <RevealOnScroll delay={100} className="space-y-5 leading-relaxed text-ink-soft">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Architektuře se věnuje od roku 2007 — má zkušenosti s projekcí průmyslových staveb,
+              bytových domů i nejrůznějších provozních staveb (od moštárny přes pálenici až po
+              pneuservis) a s návrhy soukromých i veřejných interiérů, například dětského patra OC
+              DBK nebo řady bytových a firemních prostor.
             </p>
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              Bohaté zkušenosti má také v oblasti přestaveb, nástaveb a obnovy stávajících objektů.
+              Prošla ateliéry S-PROJEKT PRAHA, CZECH Consult i MODUSatelier.cz, než si v roce 2018
+              založila vlastní stavební firmu Afutura s.r.o.
             </p>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-              laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi
-              architecto beatae vitae.
+              Projekty ráda vede na klíč od první studie po realizaci, ve spolupráci s týmem
+              osvědčených odborníků.
             </p>
+            <Link
+              to="/kariera"
+              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.1em] text-clay"
+            >
+              Celá profesní cesta →
+            </Link>
           </RevealOnScroll>
+        </Container>
+      </section>
+
+      <section className="border-b border-line py-20">
+        <Container>
+          <RevealOnScroll>
+            <SectionHeading eyebrow="Zázemí" title="Vzdělání, dovednosti a ocenění" />
+          </RevealOnScroll>
+          <div className="mt-12 grid gap-12 sm:grid-cols-2">
+            <RevealOnScroll>
+              <h3 className="font-display text-lg font-semibold text-ink">Vzdělání</h3>
+              <div className="mt-4 text-sm text-ink-soft">
+                <p className="font-medium text-ink">ČVUT Praha, Fakulta stavební</p>
+                <p className="mt-1">Architektura a pozemní stavitelství, Ing. arch. (2006–2012)</p>
+              </div>
+            </RevealOnScroll>
+            <RevealOnScroll delay={100}>
+              <h3 className="font-display text-lg font-semibold text-ink">Dovednosti a ocenění</h3>
+              <ul className="mt-4 space-y-2 text-sm text-ink-soft">
+                <li>ArchiCAD, AutoCAD</li>
+                <li>Čeština (rodilý mluvčí), němčina, angličtina, latina</li>
+                <li>Xella International Student Competition</li>
+                <li>Školní ocenění za nejlepší semestrální projekty</li>
+              </ul>
+            </RevealOnScroll>
+          </div>
         </Container>
       </section>
 
